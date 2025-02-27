@@ -175,17 +175,7 @@ const TimerHeading = ({ heading }) => {
           onChange={initTyping}
         ></textarea>
       </div>
-      <SpeedChecker
-        typingText={typingText}
-        inpFieldValue={inpFieldValue}
-        timeLeft={timeLeft}
-        mistakes={mistakes}
-        WPM={WPM}
-        CPM={CPM}
-        initTyping={initTyping}
-        handleStartBtn={handleStartBtn}
-        resetGame={resetGame}
-      />
+      <SpeedChecker mistakes={mistakes} WPM={WPM} CPM={CPM} />
     </div>
   );
 };
