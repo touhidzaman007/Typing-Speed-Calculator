@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+.container {
+	max-width: 800px; /* Set a max width for the container */
+	margin: 0 auto; /* Center the container */
+}
+
+.char {
+	display: inline-block; /* Ensure characters are inline */
+	font-size: 1.5rem; /* Increase font size for better readability */
+	margin: 0 2px; /* Add some space between characters */
+}
+
+.correct {
+	color: green; /* Color for correct characters */
+}
+
+.wrong {
+	color: red; /* Color for wrong characters */
+}
+
+.active {
+	border-bottom: 2px solid blue; /* Highlight the active character */
+}
+
+input[type="text"],
+textarea {
+	transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input:focus,
+textarea:focus {
+	border-color: blue; /* Change border color on focus */
+	outline: none; /* Remove default outline */
+}
